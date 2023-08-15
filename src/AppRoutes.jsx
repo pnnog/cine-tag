@@ -13,8 +13,8 @@ function AppRoutes() {
         <Routes>
           <Route path="/" element={<Base />}>
             <Route index element ={<Home/>}/>
-            <Route path="favoritos" element ={<Favoritos/>}/>
-            <Route path="player/:id" element={<Player />}/>
+            <Route path="/favoritos" element ={<Favoritos/>}/>
+            <Route path="/player/:id" element={<Player />}/>
             <Route path="*" element={<NotFound />}/>
           </Route>
         </Routes>

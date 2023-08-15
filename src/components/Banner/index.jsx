@@ -1,4 +1,4 @@
-import { useLocation, useParams } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 import homeBannerMobile from '@assets/mobile/home-banner.png'
 import homeBannerTablet from '@assets/tablet/home-banner.png'
@@ -67,7 +67,6 @@ const Banner  = () =>{
  
   const {mobile, tablet, desktop} = findPageBanner(clearPathname)
 
-  
   return(
     <div className=" h-[240px] lg:h-[347px] shadow-lg text-white flex mb-10 lg:mb-12 ">
       <img src={mobile} alt="Imagem do banner" className=' h-full w-full md:hidden' />

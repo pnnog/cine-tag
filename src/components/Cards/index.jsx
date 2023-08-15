@@ -1,10 +1,8 @@
-import Section from '@components/Section'
-import Card from './Cards'
+import Card from './Card'
 
 const Cards = ({cards}) =>{
 
   return(
-    <Section id='cards'>
       <ul className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 '>
         {cards.map(card => 
           <Card 
@@ -15,8 +13,6 @@ const Cards = ({cards}) =>{
             fav={card.fav} 
           />)}
       </ul>
-    </Section>
-
   )
 }
 

@@ -1,6 +1,7 @@
+import Banner from "@components/Banner"
 import Cards from "@components/Cards"
+import Container from "@components/Container"
 import Heading from "@components/Heading"
-import Section from "@components/Section"
 import useCardsContext from "hooks/useCardsContext"
 
 const Favoritos = () => {
@@ -8,11 +9,15 @@ const Favoritos = () => {
   const {favCards} = useCardsContext()
   const thereAreFavorites = favCards.length>0
   return (
-    <main>
-      <Heading> Meus favoritos </Heading>
-      {thereAreFavorites && <Cards cards={favCards} />}
-      {!thereAreFavorites && <Section> <p> Você ainda não favoritou nenhum filme. :(</p></Section> }
-    </main>
+    <>
+      <Banner />
+      <Container>
+        <Heading> Meus favoritos </Heading>
+        {thereAreFavorites && <Cards cards={favCards} />}
+        {!thereAreFavorites &&  <p> Você ainda não favoritou nenhum filme. :(</p>}
+      </Container>
+
+    </>
     
 
   )

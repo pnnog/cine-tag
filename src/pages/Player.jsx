@@ -1,6 +1,9 @@
 import Heading from "@components/Heading"
 import useCardsContext from "hooks/useCardsContext"
 import {useParams } from "react-router-dom"
+import NotFound from "./NotFound"
+import Banner from "@components/Banner"
+import Container from "@components/Container"
 
 const Player = () =>{
   const {id} = useParams()
@@ -8,14 +11,24 @@ const Player = () =>{
 
   const movie = getMoviePlayer(id)
 
-  return(
-   <main className="container mx-auto p-6">
-    <Heading> {movie.title}</Heading>
-    <div className="w-full h-[500px] bg-gray-500 flex items-center justify-center text-green-300">
-      PLAYER
-    </div>
-   </main>
+
+  return movie?(
+    <>
+      <Banner />
+      <Container>
+        <Heading> {movie.title}</Heading>
+        <div className="w-full h-[500px] bg-gray-500 flex items-center justify-center text-green-300">
+          PLAYER
+        </div>
+      </Container>
+
+    </>
+ 
   )
+  : <NotFound />
+
+
+  
 }
 
 export default Player

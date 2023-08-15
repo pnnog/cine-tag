@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const Logo  = () =>{
   return(
     <Link to='/' > 
-      <svg width="170" height="48" viewBox="0 0 170 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+      <svg width="170" height="48" viewBox="0 0 170 48" fill="none" xmlns="://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
         <rect width="169.5" height="48" fill="url(#pattern0)"/>
         <defs>
           <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">

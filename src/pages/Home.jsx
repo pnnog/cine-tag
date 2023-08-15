@@ -12,7 +12,7 @@ const Home = () =>{
 
   useEffect(()=>{
     const getData = async () =>{
-      const response = await fetch('http://my-json-server.typicode.com/pnnog/cine-tag-api/videos')
+      const response = await fetch('https://my-json-server.typicode.com/pnnog/cine-tag-api/videos')
       const json = await response.json()
       setCards(json)
     }

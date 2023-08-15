@@ -1,9 +1,9 @@
 import Heading from "@components/Heading"
 import useCardsContext from "hooks/useCardsContext"
 import {useParams } from "react-router-dom"
-import NotFound from "./NotFound"
 import Banner from "@components/Banner"
 import Container from "@components/Container"
+import NotFound from "@pages/NotFound"
 
 const Player = () =>{
   const {id} = useParams()

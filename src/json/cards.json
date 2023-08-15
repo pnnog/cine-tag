@@ -1,0 +1,30 @@
+[
+  {
+    "id":1,
+    "img":"android",
+    "title":"O Labirinto do Logcat",
+    "fav": false
+  },
+
+  {
+    "id":2,
+    "img":"component",
+    "title":"2022: Um componente no espaço",
+    "fav": false
+  },
+
+  {
+    "id":3,
+    "img":"js",
+    "title":"O Poderoso JavaScript",
+    "fav": false
+  },
+
+  {
+    "id":4,
+    "img":"dart",
+    "title":"Dart, o Caçador de Androides",
+    "fav": false
+  }
+
+]

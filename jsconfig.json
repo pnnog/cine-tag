@@ -4,8 +4,11 @@
     "paths": {
       "@pages/*": ["pages/*"],
       "@components/*": ["components/*"],
-      "@commons/*": ["commons/*"],
-    }
+      "@context/*": ["context/*"],
+      "@assets/*": ["assets/*"],
+      "@json/*": ["json/*"],
+    },
   },
-  "include": ["src"]
+  "include": ["src"],
+
 }

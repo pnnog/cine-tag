@@ -6,15 +6,16 @@ import useCardsContext from "hooks/useCardsContext"
 
 const Favoritos = () => {
 
-  const {favCards} = useCardsContext()
-  const thereAreFavorites = favCards.length>0
+  const {favs} = useCardsContext()
+
+  const alreadyExists = favs.length>0
   return (
     <>
       <Banner />
       <Container>
         <Heading> Meus favoritos </Heading>
-        {thereAreFavorites && <Cards cards={favCards} />}
-        {!thereAreFavorites &&  <p> Você ainda não favoritou nenhum filme. :(</p>}
+        {alreadyExists && <Cards cards={favs} />}
+        {!alreadyExists &&  <p className="text-white text-xl"> Você ainda não favoritou nenhum filme. :(</p>}
       </Container>
 
     </>

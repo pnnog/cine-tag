@@ -3,10 +3,10 @@ import { createContext, useState } from "react";
 export const CardsContext = createContext()
 
 export const CardsContextProvider = ({children}) =>{
-  const [cards, setCards] = useState([])
+  const [favs, setFavs] = useState([])
 
   return(
-    <CardsContext.Provider value={{cards, setCards}}>
+    <CardsContext.Provider value={{favs, setFavs}}>
       {children}
     </CardsContext.Provider>
   )

@@ -18,6 +18,7 @@
     -webkit-font-smoothing:antialiased;
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
+    background-color: rgb(49, 51, 65);
   }
 
   #root{
@@ -35,6 +36,6 @@
 
 @layer components{
   .pn-heading{
-    @apply text-center text-lg font-normal relative mb-14 md:text-2xl md:font-medium after:absolute after:-bottom-4 after:left-2/4 after:-translate-x-2/4 after:h-[2px] after:w-1/6 after:bg-yellow-500
+    @apply text-center text-white  text-lg font-normal relative mb-14 md:text-2xl md:font-medium after:absolute after:-bottom-4 after:left-2/4 after:-translate-x-2/4 after:h-[4px] after:rounded-md after:w-1/6 after:bg-yellow-500
   }
 }

@@ -6,7 +6,7 @@
       "@components/*": ["components/*"],
       "@context/*": ["context/*"],
       "@assets/*": ["assets/*"],
-      "@json/*": ["json/*"],
+      "@utils/*": ["utils/*"],
     },
   },
   "include": ["src"],

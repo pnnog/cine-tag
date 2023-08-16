@@ -29,7 +29,7 @@ Você pode acessar o código fonte do projeto original ou baixá-lo
 - Instale as dependências do client com `yarn`
 - Rode o client com `yarn dev`
 
-## :checkered_flag: Outras informações
+## Outras informações
 
 ### Como buildar o projeto para PROD?
 
